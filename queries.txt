@@ -1,0 +1,17 @@
+"prospective students",
+"MSc Busics",
+"Geometry",
+"Danail Stoyanov",
+"Gabriel Brostow",
+"Robot vision and navigation",
+"logic semantics and verification",
+"statistical natural language processing",
+"cryptanalysis",
+"machine learning",
+"mahcin learning",
+"learning machines",
+"learn machine",
+ "Business Analytics",
+ "Buisness Analytic",
+ "Busines Analytic"
+

@@ -1,0 +1,35 @@
+export DJANGO_SETTINGS_MODULE="main.settings"
+
+
+# Names of nodes to start
+#   most people will only start one node:
+CELERYD_NODES="worker1"
+
+# Absolute or relative path to the 'celery' command:
+CELERY_BIN="/home/ec2-user/venv/bin/celery"
+
+# App instance to use
+# comment out this line if you don't use an app
+CELERY_APP="main"
+# or fully qualified:
+#CELERY_APP="proj.tasks:app"
+
+# Where to chdir at start.
+CELERYD_CHDIR="/home/ec2-user/ucl-search-engine"
+
+# Extra command-line arguments to the worker
+CELERYD_OPTS="--concurrency=8"
+
+# %N will be replaced with the first part of the nodename.
+CELERYD_LOG_FILE="/var/log/celery/%N.log"
+CELERYD_PID_FILE="/var/run/celery/%N.pid"
+
+# Workers should run as an unprivileged user.
+#   You need to create this user manually (or you can choose
+#   a user/group combination that already exists, e.g. nobody).
+CELERYD_USER="ec2-user"
+CELERYD_GROUP="ec2-user"
+
+# If enabled pid and log directories will be created if missing,
+# and owned by the userid/group configured.
+CELERY_CREATE_DIRS=1
